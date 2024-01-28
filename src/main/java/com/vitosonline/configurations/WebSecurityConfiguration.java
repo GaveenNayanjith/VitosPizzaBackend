@@ -18,12 +18,13 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(AbstractHttpConfigurer::disable).authorizeHttpRequests((request) -> {
-            ((AuthorizeHttpRequestsConfigurer.AuthorizedUrl)((AuthorizeHttpRequestsConfigurer.AuthorizedUrl)request.requestMatchers(new String[]{"/api/auth/**"})).permitAll().anyRequest()).authenticated();
-        }).sessionManagement((management) -> {
-            management.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-        });
-        return (SecurityFilterChain)http.build();
+        http.csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(request -> request.requestMatchers("/api/auth/**")
+                        .permitAll()
+                        .anyRequest().authenticated())
+                .sessionManagement(management -> management.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
+        return http.build();
     }
 
     @Bean
