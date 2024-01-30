@@ -1,12 +1,13 @@
 package com.vitosonline.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.vitosonline.dtos.PizzaDto;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
+@Table(name = "pizza")
 @Entity
 @Data
 public class Pizza {
@@ -22,6 +23,12 @@ public class Pizza {
     private String description;
 
     private byte[] img;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "category_id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Category category;
 
     public PizzaDto getPizzaDto(){
         PizzaDto pizzaDto = new PizzaDto();
