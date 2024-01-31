@@ -1,8 +1,8 @@
-**VitosPizzaBackend**
+# VitosPizzaBackend
 
 - This Repository is the backend application for the https://github.com/GaveenNayanjith/vitosonline-portal.
 
-_Steps to Setting-Up the project_
+## _Steps to Setting-Up the project_
 1. Clone the backend repository and load the pom.xml as a Maven project
 2. Clone the frontend repository from https://github.com/GaveenNayanjith/vitosonline-portal and deploy it by using the command "ng serve"
 3. Go to **src/main/resources/application.properties** in this repository and change the DB and port settings as per your requirements
