@@ -22,8 +22,6 @@ public class Pizza {
 
     private String description;
 
-    private byte[] img;
-
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "category_id")
     @OnDelete(action = OnDeleteAction.CASCADE)
@@ -36,7 +34,6 @@ public class Pizza {
         pizzaDto.setName(name);
         pizzaDto.setPrice(price);
         pizzaDto.setDescription(description);
-        pizzaDto.setReturnedImg(img);
         return pizzaDto;
 
     }

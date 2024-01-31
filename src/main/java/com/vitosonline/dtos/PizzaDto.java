@@ -13,8 +13,4 @@ public class PizzaDto {
 
     private String description;
 
-    private byte[] returnedImg;
-
-    private MultipartFile img;
-
 }

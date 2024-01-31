@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53ac847e-4909-463d-b757-e93611306d82" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/dtos/CategoryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/vitosonline/HomeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/configurations/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/configurations/WebSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/dtos/PizzaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/dtos/PizzaDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/entities/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/entities/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/repositories/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/repositories/PizzaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/services/home/HomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/services/home/HomeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vitosonline/services/home/HomeServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vitosonline/services/home/HomeServiceImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,26 +37,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.VitosPizzaBackend [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.VitosPizzaBackend [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AuthControllerTest.testLogin.executor": "Run",
+    "JUnit.AuthControllerTest.testUserLogin.executor": "Run",
+    "JUnit.HomeControllerTest (1).executor": "Run",
+    "JUnit.HomeControllerTest.executor": "Run",
+    "JUnit.HomeControllerTest.testGetCategory.executor": "Run",
+    "Maven.VitosPizzaBackend [clean].executor": "Run",
+    "Maven.VitosPizzaBackend [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.vitosonline" />
+      <recent name="" />
       <recent name="com.vitosonline.services.auth" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vitosonline.test" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.HomeControllerTest.testGetCategory">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vitosonline.Main" />
       <module name="VitosPizzaBackend" />
@@ -74,9 +81,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthControllerTest.testUserLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VitosPizzaBackend" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AuthControllerTest" />
+      <option name="METHOD_NAME" value="testUserLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VitosPizzaBackend" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VitosPizzaBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vitosonline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vitosonline" />
+      <option name="MAIN_CLASS_NAME" value="com.vitosonline.HomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeControllerTest.testGetCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VitosPizzaBackend" />
+      <option name="PACKAGE_NAME" value="com.vitosonline" />
+      <option name="MAIN_CLASS_NAME" value="com.vitosonline.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testGetCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomeControllerTest.testGetCategory" />
+        <item itemvalue="JUnit.HomeControllerTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.HomeControllerTest (1)" />
+        <item itemvalue="JUnit.AuthControllerTest.testUserLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -90,5 +145,15 @@
       <updated>1706253660995</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ExceptionInInitializerError" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
